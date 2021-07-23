@@ -1,0 +1,72 @@
+// main: ../style.less
+
+.intro__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+    
+    .intro__content {
+        width: 50%;
+        padding-top: 100px;
+        
+    
+        .intro__subtitle {
+        font-size: 32px;
+        font-weight: 200;
+        color: @black;
+        margin-bottom: 20px;
+     }
+    
+        .intro__title {
+        font-size: 45px;
+        font-weight: 700;
+        color: @black;
+        margin-bottom: 20px;
+        }
+        .intro__text {
+            font-size: 18px;
+            font-weight: 100px;
+            color: @black;
+            opacity: 0.7;
+            margin-bottom: 30px;
+        }
+        
+     
+    }
+    .intro__photo {
+        width: 50%;
+    }
+    .photo__block {
+        padding-top: 100px;
+        max-width: 100%;
+        
+    
+        .photo-size {
+            width: 100%;
+            border-radius: 100px;
+        }
+    }
+}
+
+
+@media screen and (max-width:768px) {
+
+    .photo__block {
+            display: none;
+           
+    }
+    .intro__inner .intro__photo {
+        width: 0;
+    }
+
+    .intro__inner {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .intro__social {
+        justify-content: center;
+    }
+
+}

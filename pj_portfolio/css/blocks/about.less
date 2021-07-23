@@ -1,0 +1,76 @@
+// main: ../style.less
+
+.about {
+    margin-bottom: 140px;
+    
+    .about__inner {
+        display: flex;
+        max-width: 1090px;
+        
+        .about__photo {
+            width: 50%;
+            background-image: url(/css/img/about/1.jpg);
+            background-size: cover;
+        }
+        .about__content {
+            width: 50%;
+            margin-left: 25px;
+            
+            
+            .about__text {
+                margin-top: 40px;
+                font-size: 12px;
+                line-height: 25px;
+                padding-left: 5px;
+            }
+        }
+    }
+    
+}
+.about__bigtitle {
+    font-size: 92px;
+    font-weight: 700;
+    color: @light-gray;
+}
+
+h3 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+
+@media screen and (max-width:1100px) {
+
+    .about__bigtitle {
+        font-size: 64px;
+        text-align: center;
+    }
+    .title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .about__photo {
+        display: none;
+    }
+    .about__inner {
+        margin: 0;
+        justify-content: center;
+    }
+    .about .about__inner .about__content {
+        margin: 0;
+    }
+    .user .user__content {
+        padding: 5px;
+    }
+}
+
+
+@media screen and (max-width:1100px) {
+    .about__text {
+        font-size: 12px
+    }
+   .revievs {
+       padding-left: 50px;
+   }
+}

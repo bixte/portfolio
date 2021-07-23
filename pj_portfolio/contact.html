@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="modal" style>
+        <div class="modal__dialog modal__dialog--sm">
+           <a href="index.html">
+                <button type="button" style="border-radius: 50%;overflow: hidden;" class="modal-work__button">
+                    <img width="30px"height="30px" style="background-color: #6a696b;" src="/css/img/modal/close.svg " alt="">
+                </button>
+           </a>
+            <div class="contact">
+                <div class="contact__left">
+                    <div class="modal__content">
+                        <h3 class="modal__title" style="margin-bottom:5px;">Let's Talk!</h3>
+                        <p class="modal__subtitle">CALL ME OR SEND ME A REQUEST</p>
+                    <ul class="contact__info">
+                        <li class="contact__info-item"><img class="info-item__icon" src="/css/img/modal/phone.svg" width="20px" height="20px" alt="">8-800-555-35-35</li>
+                        <li class="contact__info-item"><img class="info-item__icon" src="/css/img/modal/mail.svg" width="20px" height="20px" alt="">vip.artem.maksimov@mail.ru</li>
+                    </ul>
+                    <form class="contact-form" method="POST" action="#">
+                        <p>Adress email</p> 
+                        <input class="form__email" type="email" placeholder="adress e-mail">
+                        <p class="form-quest">Request</p>
+                        <textarea class="form__requast" name="text" placeholder="type your requast"></textarea>
+                        <div  class="text-r mbt-10"> <button type="submit" class="btn--sm">Отправить</button></div>
+                    </form>
+                    </div>
+                </div>
+                <div class="contact__right">
+                   <div class="right-item"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

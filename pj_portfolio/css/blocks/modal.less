@@ -1,0 +1,66 @@
+// main: ../style.less
+
+.modal {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    background-color: fade(@black, 80%);
+    overflow: auto;
+}
+
+.modal__dialog {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #fff;
+    &--sm {
+        max-width: 900px;
+        .modal__title {
+            text-align: left;
+        }
+    }
+}
+
+
+
+.modal__content {
+    padding: 60px 15px;
+    
+}
+
+.modal__title {
+    font-size: 45px;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.modal__subtitle {
+ margin-bottom: 20px;      
+}
+
+.modal__button {
+    text-align: center;
+     
+    .btn {
+        font-size: 14px;
+        
+    }
+}
+
+@media screen and (max-width:685px) {
+   .modal__title {
+       font-size: 30px;
+       margin-bottom: 50px;
+       
+   } 
+
+   .modal__subtitle {
+        font-size: 12px;
+   }
+}

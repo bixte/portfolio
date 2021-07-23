@@ -1,0 +1,104 @@
+// main: ../style.less
+
+.modal-work {
+    display: flex;
+}
+
+.modal__dialog {
+    position: relative;
+}
+
+.modal-work__previev {
+ width: 65%;
+ max-height: 850px;
+ height: auto;
+ overflow: hidden;
+ background-image:url(https://ultramarine-spb.ru/imgs/2021-02%202_1280.jpg);
+ background-size: cover;
+}   
+
+
+.modal-work__content {
+    width: 35%;
+    padding: 50px 100px 15px 25px;
+    position: relative;
+}
+
+.modal-work__header {
+    margin-bottom: 32px;
+}
+
+.model-work__title {
+    font-weight: 700;
+    color: @black;
+    font-size: 32px;
+    text-transform: uppercase;
+    
+}
+
+.modal-work__info {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: @gray;
+    opacity: .7;
+    margin-top: 5px;
+}
+
+
+.modal-work__client {
+    margin-bottom: 32px;
+}
+
+.modal-work__title {
+    font-size: 16px;
+    color: @black;
+    font-weight: 700;
+}
+
+.modal-work__company{
+    font-size: 14px;
+    color: @gray;
+    font-style: italic;
+    margin-top: 5px;
+    
+}
+
+.modal-work__text {
+    font-size: 12px;
+    line-height: 24px;
+    margin-bottom: 129px;
+}
+
+.modal-work__button {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 50px;
+    background-color: #fff;
+    width: 30px;
+    z-index: 1000;
+
+    &:hover{
+        transform: rotate(90deg);
+        transition: transform 0.2s linear;
+    }
+}
+
+.modal-work__footer {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    padding: 0 15px 15px 15px;
+}
+
+.modal-work__btn {
+    text-transform: uppercase;
+    background: none;
+    font-size: 14px;
+    color: black;
+    
+}

@@ -1,0 +1,30 @@
+//main: ../style.less
+
+.progress-bar__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+    &:last-child {
+        margin-bottom: 40px;
+    }
+}
+
+.progress-bar__left {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.progress-bar__right {
+    padding-left: 20px;
+}
+.progress-bar__line {
+    width: 139px;
+    height: 6px;
+    background-color: #efefef;
+}
+
+.progress-bar__progress {
+    height:100%;
+    background: @gray;
+    transition: width 2s linear;
+}

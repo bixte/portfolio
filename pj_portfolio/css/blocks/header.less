@@ -1,0 +1,155 @@
+// main: ../style.less
+
+header {
+    padding-top: 1.2rem;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    margin-right: 15px;
+.nav__link {
+        font-size: 14px;
+        color: @black;
+        font-weight: 700;
+        text-decoration: none;
+        margin-left: 30px;
+      
+        border-radius: 20px;
+        position: relative;
+      
+
+        &:after {
+            content: "";
+            background-color: @black;
+            height: 2px;
+            width: 0;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            z-index: 1;
+            transition: width .3s 
+            
+        }
+        &:hover {
+            &:after {
+                width: 100%;
+            }
+        }
+
+        &--btn {
+             border: solid 2px black;
+             text-decoration: none;
+             border-radius: 30px;
+             margin-left: 10px;
+             padding: 15px 30px;
+             color: @black;
+             font-weight: 700;
+             
+             &:hover {
+                 background-color: @black;
+                 color: white;
+                 transition: all 0.2s;
+             }
+        }
+    }
+    
+    
+}
+
+
+@media screen and (max-width:768px) {
+    body.lock {
+        overflow: hidden;
+    }
+    .container {
+        padding: 0 30px;
+        
+    }
+    .menu__nav {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        transform: translateY(-100%);
+        transition: .4s ease-in-out;
+        
+    }
+    .menu__nav.active {
+        transform: translateY(0);
+    }
+    
+    nav {
+        position: relative;
+        top: 50%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav a {
+        padding: 10px;
+        color: white;
+        margin: 0;
+        font-size: 25px;
+    }
+    .nav__link--btn {
+        display: none;
+    }
+
+
+    .burger {
+        width: 30px;
+        height: 20px;
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        z-index: 10;
+        
+    }
+    .burger::before,.burger::after {
+        content: " ";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: rgb(255, 0, 0);
+    }
+    .burger::before {
+        top: 0;
+    }
+
+    .burger::after {
+        bottom: 0;
+    }
+    
+    .burger span {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        background-color: rgb(255, 0, 0);
+        width: 100%;
+        height: 2px;
+        
+    }
+
+    .user {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 10;
+    }
+	
+    
+
+}
+
+@media screen and (max-width:420px) {
+    .user {}
+}
